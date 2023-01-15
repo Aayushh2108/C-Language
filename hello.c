@@ -1,7 +1,20 @@
 #include<stdio.h>
+void printHello();
+void printgoodBye(); 
 
-int main()
+int main(){
+    printHello();
+    printgoodBye();
+    printHello();
+    return 1;
+}
+void printHello()
 {
-    printf("hello");
-    return 0;
+    printf("Hello!\n");
+    printf("Namaste\n");
+}
+void printgoodBye()
+{
+    printf("Goodbye\n");
+    printf("Chala ja bsdk\n");
 }

@@ -1,20 +1,13 @@
 #include<stdio.h>
-void printHello();
-void printgoodBye(); 
-
+void printHW(char count );
 int main(){
-    printHello();
-    printgoodBye();
-    printHello();
-    return 1;
+    printHW(10);
+    return 0;
 }
-void printHello()
-{
-    printf("Hello!\n");
-    printf("Namaste\n");
-}
-void printgoodBye()
-{
-    printf("Goodbye\n");
-    printf("Chala ja bsdk\n");
+void printHW(char count ){
+    if(count==0){
+        return;
+    }
+    printf("Hello World\n");
+    printHW(count-1);
 }
